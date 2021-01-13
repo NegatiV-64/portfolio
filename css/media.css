@@ -1,0 +1,305 @@
+@media (max-width: 1199.5px) {
+
+    /* Base styles */
+    .section-template {
+        padding: 70px 0 70px;
+    }
+
+    main h2:after {
+        margin-bottom: 70px;
+    }
+
+    /* About Section */
+    .about-col__text {
+        height: 38px;
+    }
+ 
+
+
+    /* Project Section */
+    .project-website__text {
+        margin-bottom: 0;
+    }
+
+    .project-website[data-filter="dart"] .project-website__text,
+    .project-website[data-filter="nike"] .project-website__text {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991.5px) {
+
+    /* Base Styles */
+    .section-template {
+        padding: 50px 0 50px;
+    }
+
+    main h2:after {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    /* About */
+    .about-col {
+        margin-bottom: 25px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding-top: 45px;
+    }
+
+    .about-left {
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .about-right {
+        padding-left: 0;
+    }
+
+    /* Projects */
+
+    .project {
+        padding-bottom: 980px;
+    }
+
+    .project-website {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .project-website__left {
+        width: 100%;
+        height: auto;
+        max-width: unset;
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+
+
+    .project-website[data-filter="dart"] .project-website__left,
+    .project-website[data-filter="nike"] .project-website__left {
+        height:auto
+    }
+
+    .project-website__text {
+        margin-bottom: 30px;
+    }
+
+    /* About */
+
+    .contact::before {
+        top: -40px;
+        right: 0;
+        height: 70px;
+    }
+
+    .contact::after {
+        top: -40px;
+        right: 0;
+        height: 70px;
+    }
+
+    .contact {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767.5px) {
+
+    /* Base Styles */
+
+    main h2:after {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .section-template {
+        padding: 40px 0 40px;
+    }
+
+
+    /* Header Content */
+    .header-content__title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .header-content__subtile {
+        margin-bottom: 30px;
+        font-size: 31px;
+    }
+
+    /* Animation for the Header Content Subtitle */
+    @keyframes headerContentSubtitle {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 466px;
+        }
+    }
+
+    /* About */
+
+
+    .about-col__text {
+        font-size: 11pt;
+    }
+
+    /* Project */
+
+    .project-website__title {
+        font-size: 30px; 
+    }
+
+    .project-website__text {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .project-content__links {
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 12pt;
+        font-weight: 400;
+        transition: 0.2s;
+        color: white;
+        margin: 0 15px 8px;
+        padding: 8px 15px;
+    }
+
+    /* About */
+
+    .contact::before {
+        width: 51%;
+        height: 75px;
+    }
+
+    .contact::after {
+        width: 51%;
+        height: 75px;
+    }
+
+    .contact {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .contact__title:after {
+        margin: 5px auto 40px auto;
+    }
+}
+
+@media (max-width: 575.5px) {
+
+    /* Base styles */
+    main h2 {
+        font-size: 22pt;
+    }
+
+    main h2:after {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    .section-template {
+        padding: 30px 0 30px;
+    }
+
+    /* Header Content */
+    .header-content__subtile {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .header-content__link {
+        padding: 7px 15px 7px 15px;
+        font-size: 16px;
+    }
+
+    .header-content__icon {
+        margin-left: 10px;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    /* Animation for the Header Content Subtitle */
+    @keyframes headerContentSubtitle {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 305px;
+        }
+    }
+
+    /* Navigation */
+    .nav {
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav__burger {
+        display: inline-block;
+    }
+
+    /* About */
+
+    .about-content {
+        padding-top: 30px;
+    }
+
+    .about-col i {
+        font-size: 50px;
+    }
+
+    .about-left__text {
+        font-size: 12pt;
+    }
+
+    .progress-text-left {
+        max-width: 95px;
+        font-size: 14px;
+    }
+
+    /* Project */
+
+    .project {
+        padding-bottom: 850px;
+    }
+
+    .progress-text-right {
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        color: var(--grey-font);
+    }
+
+    .project-content__links {
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.2s;
+        color: white;
+        margin: 0 9px 6px;
+        padding: 5px 6px;
+    }
+
+    /* Progress Bar */
+
+    .progress-bar {
+        width: 95px;
+    }
+
+}
