@@ -522,11 +522,12 @@ li {
 .project-website__left {
     max-width: 540px;
     object-fit: cover;
+    height: 400px;
 }
 
 .project-website[data-filter="dart"] .project-website__left,
 .project-website[data-filter="nike"] .project-website__left {
-    height: 100%;
+    height: 400px;
 }
 
 .project-website__right {
