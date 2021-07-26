@@ -1,0 +1,56 @@
+/* #252526 - Black App Bar */
+/* #ff5f56 - Red close */
+/* #ffbd2e - Yellow minimize */
+/* #27c93f - Expand Green */
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    background: #252525;
+}
+
+.nav__container {
+    display: flex;
+}
+
+.nav__buttons {
+    display: flex;
+}
+
+.nav__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.nav__button svg {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.nav__buttons:hover svg {
+    opacity: 1;
+}
+
+.nav__button_close {
+    background: #ff5f56;
+    margin-right: 5px;
+}
+.nav__button_minimize {
+    margin-right: 5px;
+    background: #ffbd2e;
+}
+
+.nav__button_expand {
+    background: #27c93f;
+}
+
+.terminal {
+    font-size: 18px;
+    margin: 0 auto;
+}

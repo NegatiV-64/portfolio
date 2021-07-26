@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router';
+import ConsoleProvider from './context/ConsoleProvider';
+
+import TopBar from './components/TopBar/TopBar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Console from './components/Console/Console';
+
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <ConsoleProvider>
+      <header>
+        <TopBar />
       </header>
-    </div>
+      <main>
+        <Routes>
+          <Route path="/" element={
+            <Home linkList={[
+              { link: "About", path: "/about" },
+              { link: "Portfolio", path: "/portfolio" },
+              { link: "Skills", path: "/skills" },
+              { link: "Contacts", path: "/contacts" },
+            ]
+            } />
+          } />
+          <Route path="/about" element={
+            <About />
+          } />
+        </Routes>
+      </main>
+      <Console />
+    </ConsoleProvider>
   );
 }
 
