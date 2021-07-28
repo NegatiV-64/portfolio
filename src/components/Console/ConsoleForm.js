@@ -53,10 +53,16 @@ const ConsoleForm = (props) => {
         setConsoleCommand(e.target.value)
     }
 
+    let placeholderText = "";
+
+    if (consoleData.commands.length === 0) {
+        placeholderText = "*Type .help for more details"
+    }
+
     return (
         <form onSubmit={onSendConsoleHandler} className={props.className}>
             <span>{props.consolePath}</span>
-            <input placeholder="*Type .help for more details" onChange={onTypeConsoleInputHandler} value={consoleCommand} type="text" />
+            <input placeholder={placeholderText} onChange={onTypeConsoleInputHandler} value={consoleCommand} type="text" />
         </form>
     );
 }

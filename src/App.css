@@ -62,6 +62,30 @@ button {
   border: none;
 }
 
+.mainScrollable {
+  overflow-y: scroll !important;
+}
+
+.mainScrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mainScrollable::-webkit-scrollbar-track {
+  background: #7c7c7c;
+}
+
+/* Handle */
+.mainScrollable::-webkit-scrollbar-thumb {
+  transition: 0.2s;
+  background: #3F4552;
+}
+
+/* Handle on hover */
+.mainScrollable::-webkit-scrollbar-thumb:hover {
+  background: #3F4552;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;

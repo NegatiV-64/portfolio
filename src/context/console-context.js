@@ -2,7 +2,7 @@ import React from 'react'
 
 const consoleContext = React.createContext({
     commands: [],
-    addToCommands: ()=> {} 
+    addToCommands: ()=> {},
 })
 
 export default consoleContext;

@@ -16,7 +16,19 @@ const Console = () => {
 
         case "/about":
             consolePathText = "/about"
-            break
+            break;
+
+        case "/portfolio":
+            consolePathText = pathname;
+            break;
+
+        case "/contacts":
+            consolePathText = pathname;
+            break;
+
+        case "/skills":
+            consolePathText = pathname;
+            break;
 
         default:
             consolePathText = "/idk"

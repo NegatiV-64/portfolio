@@ -3,8 +3,10 @@
     border: 2px solid #8898AC;
     background: transparent;
     border-radius: 0.75rem;
-    font-size: 18px;
+    font-size: 16px;
     color: #8898AC;
-    padding: 15px 30px;
-    width: fit-content;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px 10px;
 }

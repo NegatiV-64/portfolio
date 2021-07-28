@@ -1,0 +1,45 @@
+.about__container {
+    padding-top: 20px;
+}
+
+.about__container h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.about__info,
+.about__core {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.about__info a {
+    color: #449ae0;
+}
+
+.about__favs {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about__favsList li {
+    color: var(--fontGrey);
+    margin-bottom: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.about__favsList svg {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+}
+
+.wrapper {
+    margin: 35px auto 0;
+}
+
+/* 0000EE */

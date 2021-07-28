@@ -13,7 +13,7 @@ const ConsoleProvider = (props) => {
 
     const consoleValue = {
         commands: commands,
-        addToCommands: addToCommandsArrayHandler
+        addToCommands: addToCommandsArrayHandler,
     }
 
     return (

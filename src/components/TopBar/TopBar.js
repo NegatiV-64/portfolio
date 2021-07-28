@@ -5,17 +5,41 @@ import styles from './TopBar.module.css'
 const TopBar = () => {
 
     const [expandState, setExpandState] = useState(false);
+    const [minifyState, setMinifyState] = useState(false);
 
     function onExpandClickHandler (e) {
         e.preventDefault();
         if (expandState) {
             document.querySelector('#root').style.height = "85%"
-            document.querySelector('#root').style.width = "85%"
+            document.querySelector('#root').style.width = "80%"
+            document.querySelector("main").style.overflowY = "visible";
+            document.querySelector("main").style.overflowX = "visible";
+            document.querySelector('main').style.height = "auto";
             setExpandState(false)
         } else {
             document.querySelector('#root').style.height = "100%"
             document.querySelector('#root').style.width = "100%"
+            document.querySelector("main").style.overflowY = "visible";
+            document.querySelector("main").style.overflowX = "visible";
+            document.querySelector('main').style.height = "auto";
             setExpandState(true)
+        }
+    }
+
+    function onMinifyClickHandler(e) {
+        e.preventDefault();
+        if (minifyState) {
+            document.querySelector('#root').style.height = "85%"
+            document.querySelector("main").style.overflowY = "visible";
+            document.querySelector("main").style.overflowX = "visible";
+            document.querySelector('main').style.height = "auto";
+            setMinifyState(false)
+        } else {
+            document.querySelector('#root').style.height = "0%";
+            document.querySelector("main").style.overflowY = "hidden";
+            document.querySelector("main").style.overflowX = "hidden";
+            document.querySelector('main').style.height = "0";
+            setMinifyState(true)
         }
     }
 
@@ -29,7 +53,7 @@ const TopBar = () => {
                         </svg>
                     </button>
 
-                    <button className={styles.nav__button + " " + styles.nav__button_minimize}>
+                    <button onClick={onMinifyClickHandler} className={styles.nav__button + " " + styles.nav__button_minimize}>
                         <svg width="6" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path stroke="#000" strokeWidth="2" strokeLinecap="round" d="M.61.703h5.8"></path>
                         </svg>
