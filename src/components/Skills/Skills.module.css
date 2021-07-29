@@ -1,0 +1,94 @@
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills__wrapper {
+    margin-top: 18px;
+}
+
+.skills__wrapper h5 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__list svg {
+    margin: 0 5px;
+    font-size: 32px;
+}
+
+/* Icons Colors for Core*/
+
+.skills__core li:nth-of-type(1) svg {
+    color: #e34f26;
+}
+
+.skills__core li:nth-of-type(2) svg {
+    color: #2965f1;
+}
+
+.skills__core li:nth-of-type(3) svg {
+    color: #cc6699;
+}
+
+.skills__core li:nth-of-type(4) svg {
+    color: #f7df1e;
+}
+
+/* Icons colors for UI */
+/* 0081cb */
+.skills__ui li:nth-of-type(1) svg {
+    color: #7952b3;
+}
+.skills__ui li:nth-of-type(2) svg {
+    color: #0081cb;
+}
+.skills__ui li:nth-of-type(3) svg {
+    color: #38b2ac;
+}
+
+/* Icons colors for UI */
+.skills__libs li:nth-of-type(1) svg {
+    color: #61DBFB;
+}
+.skills__libs li:nth-of-type(2) svg {
+    color: #764abc;
+}
+.skills__libs li:nth-of-type(3) svg {
+    color: #db7093;
+}
+.skills__libs li:nth-of-type(4) svg {
+    color: #d0021b;
+}
+.skills__libs li:nth-of-type(5) svg {
+    color: #0769ad;
+}
+
+/* Icons colors for UI */
+.skills__other li:nth-of-type(1) svg {
+    color: #3C873A;
+}
+.skills__other li:nth-of-type(2) svg {
+    color: #8993be ;
+}
+.skills__other li:nth-of-type(3) svg {
+    color: #00749C ;
+}
+.skills__other li:nth-of-type(4) svg {
+    color: #f34f29  ;
+}
+.skills__other li:nth-of-type(5) svg {
+    color: #00758F  ;
+}

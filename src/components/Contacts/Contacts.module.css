@@ -3,6 +3,11 @@
 }
 
 .contacts__container h2 {
+    text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
+}
+
+.contacts__container p{
+    text-align: center;
 }

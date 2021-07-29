@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import styles from './Contacts.module.css'
+import styles from './ContactsForm.module.css'
 
 const ContactsForm = (props) => {
     const [inputName, setInputName] = useState("");
@@ -10,6 +10,7 @@ const ContactsForm = (props) => {
     function inputNameHandler(e) {
         setInputName(e.target.value)
     }
+
     function inputPhoneHandler(e) {
         setInputPhone(e.target.value);
     }
@@ -40,19 +41,21 @@ const ContactsForm = (props) => {
 
     return (
         <form onSubmit={onSendFormHandler} className={styles.form}>
-            <div className={styles.form__wrap}>
-                <label htmlFor="name"></label>
-                <input value={inputName} onChange={inputNameHandler} required id="name" placeholder="Your Name" type="text" />
-            </div>
-            <div className={styles.form__wrap}>
-                <label htmlFor="phone"></label>
-                <input onChange={inputPhoneHandler} value={inputPhone} required id="phone" placeholder="Your Email" type="number" />
+            <div className={styles.form__wrapper}>
+                <div className={styles.form__wrap}>
+                    <label htmlFor="name"></label>
+                    <input value={inputName} className={styles.name} onChange={inputNameHandler} required id="name" placeholder="Your Name" type="text" />
+                </div>
+                <div className={styles.form__wrap}>
+                    <label htmlFor="phone"></label>
+                    <input onChange={inputPhoneHandler} value={inputPhone} required id="phone" placeholder="Your Phone" type="number" />
+                </div>
             </div>
             <div className={styles.form__textWrap}>
                 <label htmlFor="message"></label>
-                <textarea onChange={inputTextHandler} value={inputMessage} id="message" required></textarea>
+                <textarea placeholder="Your Message" onChange={inputTextHandler} value={inputMessage} id="message" required></textarea>
             </div>
-            <button className={styles.button}>Send</button>
+            <button className={styles.form__button}>Send</button>
         </form>
     );
 }
