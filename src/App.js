@@ -7,6 +7,8 @@ import TopBar from './components/TopBar/TopBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import PortfolioCom from './components/Portfolio/Commercial/PortfolioCom';
+import PortfolioPersonal from './components/Portfolio/Personal/PortfolioPersonal';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
 import Console from './components/Console/Console';
@@ -16,7 +18,7 @@ import './App.css';
 const App = () => {
 
   const currentLocation = useLocation();
-  let mainClasses = currentLocation.pathname==="/about" ? "mainScrollable" : "main";
+  let mainClasses = currentLocation.pathname === "/about" ? "mainScrollable" : "main";
 
   return (
     <ConsoleProvider>
@@ -45,8 +47,16 @@ const App = () => {
             />
           } />
           <Route path="/portfolio" element={
-            <Portfolio />
-          } />
+            <Portfolio linkList={[
+              { link: "Home", path: "/" },
+              { link: "Portfolio", path: "/portfolio" },
+              { link: "Skills", path: "/skills" },
+              { link: "Contacts", path: "/contacts" },
+            ]
+            } />
+          }></Route>
+          <Route path="/portfolio/commercial" element={<PortfolioCom />} />
+          <Route path="/portfolio/personal" element={<PortfolioPersonal />} />
           <Route path="/skills" element={
             <Skills />
           } />

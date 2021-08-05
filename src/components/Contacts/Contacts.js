@@ -8,7 +8,7 @@ const Contacts = () => {
     const classNames = `container ${styles.contacts__container}`
 
     return (
-        <section style={styles.contacts}>
+        <section className={styles.contacts}>
             <div className={classNames}>
                 <h2>Contacts</h2>
                 <p>If you have something in mind, let's work together</p>

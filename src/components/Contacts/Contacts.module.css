@@ -1,5 +1,9 @@
-.contacts__container {
+.contacts {
     padding-top: 20px;
+}
+
+.contacts__container {
+   padding-top: 0;
 }
 
 .contacts__container h2 {

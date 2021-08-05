@@ -1,0 +1,17 @@
+.portfolio {
+    padding-top: 20px;
+}
+
+.portfolio__container {
+    text-align: center;
+}
+
+.portfolio__container h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.portfolio__container p {
+    margin-bottom: 25px;
+}
