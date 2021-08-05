@@ -13,7 +13,7 @@ const ConsoleForm = (props) => {
 
     function onSendConsoleHandler(e) {
         e.preventDefault();
-        if (consoleCommand.includes("goto /")) {
+        if (consoleCommand.includes("goto /") && !consoleCommand.includes("List of the commands")) {
             let tempComsoleCommand = consoleCommand.split("goto ");
             let [, exactCommand] = tempComsoleCommand;
             if (exactCommand.includes("/back")) {
@@ -35,10 +35,10 @@ const ConsoleForm = (props) => {
 
         else if (consoleCommand === ".help") {
             consoleData.addToCommands(consoleCommand)
-            setConsoleCommand("List of the commands: .help; /home; /back, /about. Return: /clear ")
+            setConsoleCommand("List of the commands: .help; goto /(location). Return: /clear ")
         }
 
-        else if (consoleCommand === "List of the commands: .help; /home; /back, /about. Return: /clear /clear") {
+        else if (consoleCommand === "List of the commands: .help; goto /(location). Return: /clear /clear") {
             consoleData.addToCommands("/clear")
             setConsoleCommand("")
         }

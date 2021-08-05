@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
+import { useLocation, useNavigate } from 'react-router';
 
 import styles from './TopBar.module.css'
 
 const TopBar = () => {
 
+    const currentLocation = useLocation();
+    const navigation = useNavigate();
     const [expandState, setExpandState] = useState(false);
     const [minifyState, setMinifyState] = useState(false);
 
@@ -43,11 +46,22 @@ const TopBar = () => {
         }
     }
 
+    function onCloseHandler(e) {
+        e.preventDefault();
+        
+        if (currentLocation.pathname === "/") {
+            alert("Do you really want to close the site?(")
+        } else {
+            navigation(-1)
+        }
+
+    }
+
     return (
         <nav className={styles.nav}>
             <div className={`container ${styles.nav__container}`}>
                 <div className={styles.nav__buttons}>
-                    <button className={styles.nav__button + " " + styles.nav__button_close}>
+                    <button onClick={onCloseHandler} className={styles.nav__button + " " + styles.nav__button_close}>
                         <svg width="7" height="7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path stroke="#000" strokeWidth="1.2" strokeLinecap="round" d="M1.182 5.99L5.99 1.182m0 4.95L1.182 1.323"></path>
                         </svg>

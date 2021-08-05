@@ -18,7 +18,7 @@ import './App.css';
 const App = () => {
 
   const currentLocation = useLocation();
-  let mainClasses = currentLocation.pathname === "/about" ? "mainScrollable" : "main";
+  let mainClasses = currentLocation.pathname === "/about" || currentLocation.pathname==="/portfolio/personal" || currentLocation.pathname==="/portfolio/commercial" ? "mainScrollable" : "main";
 
   return (
     <ConsoleProvider>

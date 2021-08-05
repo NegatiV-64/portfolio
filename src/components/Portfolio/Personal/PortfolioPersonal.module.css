@@ -1,0 +1,48 @@
+.personal {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.personal__container h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.personal__container p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.personal__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal__project {
+    margin: 15px 0;
+    padding: 15px 0 20px;
+    background: var(--baseBlueGrey);
+    width: 35%;
+    display: flex;
+    border-radius: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal__project h4 {
+    font-size: 25px;
+    /* text-align: center; */
+}
+
+.personal__projectData {
+    margin-top: 10px;
+}
+
+.personal__projectData a {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px;
+}

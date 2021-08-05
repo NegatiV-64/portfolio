@@ -11,15 +11,23 @@ const Console = () => {
     let consolePathText;
     switch (pathname) {
         case "/":
-            consolePathText = "/home"
+            consolePathText = pathname
             break;
 
         case "/about":
-            consolePathText = "/about"
+            consolePathText = pathname
             break;
 
         case "/portfolio":
             consolePathText = pathname;
+            break;
+
+        case "/portfolio/personal":
+            consolePathText = "/personal";
+            break;
+            
+        case "/portfolio/commercial":
+            consolePathText = "/commercial";
             break;
 
         case "/contacts":
