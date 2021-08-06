@@ -35,16 +35,31 @@ const ConsoleForm = (props) => {
 
         else if (consoleCommand === ".help") {
             consoleData.addToCommands(consoleCommand)
-            setConsoleCommand("List of the commands: .help; goto /(location). Return: /clear ")
+            setConsoleCommand("List of the commands: .help; goto /(location). /commands - list of your commands. Return: /clear ")
         }
 
-        else if (consoleCommand === "List of the commands: .help; goto /(location). Return: /clear /clear") {
+        else if (consoleCommand === "/question") {
+            consoleData.addToCommands(consoleCommand)
+            setConsoleCommand("Answer to the Ultimate Question of Life, The Universe, and Everything is 42. Type /42 to exit. ")
+        }
+
+        else if (consoleCommand === "Answer to the Ultimate Question of Life, The Universe, and Everything is 42. Type /42 to exit. /42") {
+            setConsoleCommand("")
+        }
+
+        else if (consoleCommand === "/commands") {
+            consoleData.addToCommands(consoleCommand)
+            navigate("/commands")
+            setConsoleCommand("")
+        }
+
+        else if (consoleCommand === "List of the commands: .help; goto /(location). /commands - list of your commands. Return: /clear /clear") {
             consoleData.addToCommands("/clear")
             setConsoleCommand("")
         }
 
         else {
-            consoleData.addToCommands(consoleCommand)
+            navigate("/page404")
             setConsoleCommand("")
         }
     }

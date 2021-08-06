@@ -11,6 +11,8 @@ import PortfolioCom from './components/Portfolio/Commercial/PortfolioCom';
 import PortfolioPersonal from './components/Portfolio/Personal/PortfolioPersonal';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
+import CommandList from './components/CommandList/CommandList';
+import Page404 from './components/Page404/Page404';
 import Console from './components/Console/Console';
 
 import './App.css';
@@ -63,6 +65,8 @@ const App = () => {
           <Route path="/contacts" element={
             <Contacts />
           } />
+          <Route path={"/commands"} element={<CommandList />}/>
+          <Route path="*" element={<Page404 />}/>
         </Routes>
       </main>
       <Console />

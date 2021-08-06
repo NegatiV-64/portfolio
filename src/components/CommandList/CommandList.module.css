@@ -1,0 +1,27 @@
+.command {
+    padding-top: 20px;
+}
+
+.command__container {
+    text-align: center;
+}
+
+.command__container h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.command__container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.command__container ul li {
+    color: var(--fontGrey);
+    font-size: 18px;
+}
+.command__container ul p {
+    color: var(--fontGrey);
+    font-size: 18px;
+}

@@ -1,0 +1,20 @@
+.page404 {
+    padding-top: 20px;
+}
+
+.page404__container {
+    text-align: center;
+}
+
+.page404 h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.page404 p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.page404__container img {
+    width: 35%;
+}
