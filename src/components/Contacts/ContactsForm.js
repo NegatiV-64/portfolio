@@ -22,10 +22,10 @@ const ContactsForm = (props) => {
     function onSendFormHandler(e) {
         e.preventDefault();
         const messageText = `*Name*: ${inputName}\nPhone: ${inputPhone}\nMessage: ${inputMessage}`
-        fetch("https://api.telegram.org/bot1704742052:AAFQxq3mx9MDZrna356tEiwzf37FkvzbiZE/sendMessage", {
+        fetch("https://api.telegram.org/bot{botAPI}/sendMessage", {
             method: "POST",
             body: JSON.stringify({
-                chat_id: "71474323",
+                chat_id: "{chatID}",
                 text: messageText,
                 parse_mode: "markdown"
             }),
