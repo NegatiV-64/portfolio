@@ -2,6 +2,8 @@
 
 Hi, recently, I decided to rewrite my portfolio website enterely from scratch. Since now I am practising with React, I decided to use it here. 
 
+You can find my porfolio here: https://negativ64-portfolio.vercel.app/
+
 In additional, I wanted to make my portfolio site different from others, so I decided to make it in "terminal" style.
 
 ## 1. What i used?
